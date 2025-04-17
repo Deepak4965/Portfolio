@@ -1,0 +1,16 @@
+.skillpart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media (max-width: 750px) {
+    .skillpart {
+        height: auto; /* Allow height to adjust based on content */
+        padding: 10px; /* Adjust padding for smaller screens */
+        width: 100%; /* Use full width on smaller screens */
+        flex-wrap: wrap; /* Allow wrapping of items */
+    }
+}
