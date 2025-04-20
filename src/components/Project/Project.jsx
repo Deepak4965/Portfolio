@@ -10,8 +10,8 @@ const projects=[
         description:"",
         technologies:"React ,Tailwind",
         image:em,
-        github:"https://github.com/Deepak4965/Ecommerce",
-        demo:"https://deepak-coder-e-commerce.netlify.app/"
+          github:"https://github.com/Deepak4965/Ems",
+        demo:"https://deluxe-profiterole-23b1ec.netlify.app/"
     },
     {
         id:2,
