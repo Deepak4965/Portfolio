@@ -10,7 +10,7 @@ const projects=[
         description:"",
         technologies:"React ,Tailwind",
         image:em,
-          github:"https://github.com/Deepak4965/Ems",
+        github:"https://github.com/Deepak4965/Ems",
         demo:"https://deluxe-profiterole-23b1ec.netlify.app/"
     },
     {
