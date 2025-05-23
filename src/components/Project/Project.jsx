@@ -6,10 +6,10 @@ import './Project.css'
 const projects=[
     {
         id:11,
-        name:"Employees MS",
+       name:"Employees Management System",
         description:"",
         technologies:"React ,Tailwind",
-        image:em,
+        image:ems,
         github:"https://github.com/Deepak4965/Ems",
         demo:"https://deluxe-profiterole-23b1ec.netlify.app/"
     },
