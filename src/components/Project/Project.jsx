@@ -1,5 +1,6 @@
 import React from 'react'
 import em from '../../assets/em.png'
+import ems from '../../assets/ems.png'
 import { FaShareSquare } from 'react-icons/fa'
 import { SiGithub } from 'react-icons/si'
 import './Project.css'
