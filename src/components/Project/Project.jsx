@@ -50,7 +50,7 @@ const Project = () => {
             <h2 className='text-4xl font-bold text-center mb-12 'id='para'>Projects</h2>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
 {projects.map(Project=>(
-    <div key={Project.id} className='bg-gray-800 p-6 rounded-lg hover:shadow-lg transform transition-transform duration-300 hover:scale-105'>
+    <div key={Project.id} className='bg-gray-800 p-6 rounded-lg hover:shadow-lg transform transition-transform duration-300 hover:scale-105' id='pro'>
         <img src={Project.image} alt={Project.name} className='rounded-lg mb-4 w-full h-48 object-cover' />
         <h3 className='text-2xl font-bold mb-2'>{Project.name}</h3>
         <p className='text-gray-3 font-semibold00 mb-4'>{Project.technologies}</p>
