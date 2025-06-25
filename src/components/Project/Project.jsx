@@ -13,7 +13,7 @@ const projects=[
         description:"",
         technologies:"React , Tailwind, API",
         image:Img,
-        github:"",
+        github:"https://github.com/Deepak4965/Food-Delivery",
         demo:""
     },
     {
