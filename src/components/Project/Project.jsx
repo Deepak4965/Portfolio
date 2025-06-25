@@ -23,7 +23,7 @@ const projects=[
         technologies:"React , Tailwind",
         image:ems,
         github:"https://github.com/Deepak4965/Ems",
-        demo:""
+        demo:"deepak-ems.netlify.app"
     },
     {
         id:3,
