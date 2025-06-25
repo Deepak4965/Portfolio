@@ -1,42 +1,45 @@
 import React from 'react'
 import em from '../../assets/em.png'
 import ems from '../../assets/ems.png'
+import Img from '../../assets/Img-enhance.jpg'
 import { FaShareSquare } from 'react-icons/fa'
 import { SiGithub } from 'react-icons/si'
 import './Project.css'
 const projects=[
-    {
-        id:11,
-       name:"Employees Management System",
+   
+  {
+        id:1,
+        name:"Image Enhanced",
         description:"",
-        technologies:"React ,Tailwind",
-        image:ems,
-        github:"https://github.com/Deepak4965/Ems",
-        demo:"deepak-ems.netlify.app"
+        technologies:"React , Tailwind, API",
+        image:Img,
+        github:"",
+        demo:""
     },
     {
         id:2,
-        name:"Employees MS",
-        technologies:"React ,Tailwind",
-        image:em,
-        github:"https://github.com/Deepak4965/Ecommerce",
-        demo:"https://deepak-coder-e-commerce.netlify.app/"
+        name:"Employees Management System",
+        description:"",
+        technologies:"React , Tailwind",
+        image:ems,
+        github:"https://github.com/Deepak4965/Ems",
+        demo:""
     },
     {
         id:3,
-        name:"Employees MS",
-        technologies:"React ,Tailwind",
+        name:"Ecommerce",
+        technologies:"Redux, React",
         image:em,
         github:"https://github.com/Deepak4965/Ecommerce",
         demo:"https://deepak-coder-e-commerce.netlify.app/"
     },
     {
         id:4,
-        name:"Employees MS",
-        technologies:"React ,Tailwind",
+        name:"Food Delievery",
+        technologies:"React , Tailwind",
         image:em,
-        github:"https://github.com/Deepak4965/Ecommerce",
-        demo:"https://deepak-coder-e-commerce.netlify.app/"
+        github:"",
+        demo:""
     },
 ]
 
