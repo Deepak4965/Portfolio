@@ -4,3 +4,8 @@
     background-clip: text;
     color: transparent;
     }
+#pro:hover{
+   
+    box-shadow: 2px 2px 10px  rgb(105,208,215),2px 2px 20px  rgb(105,208,215);
+
+}
