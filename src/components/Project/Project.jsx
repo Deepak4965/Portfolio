@@ -1,10 +1,15 @@
 import React from 'react'
+import job from '../../assets/job.jpg'
 import em from '../../assets/em.png'
 import ems from '../../assets/ems.png'
 import Img from '../../assets/Img-enhance.jpg'
 import { FaShareSquare } from 'react-icons/fa'
 import { SiGithub } from 'react-icons/si'
 import './Project.css'
+import {useGSAP} from '@gsap/react'
+import gsap from 'gsap'
+import {ScrollTrigger} from 'gsap/all'
+gsap.registerPlugin(ScrollTrigger)
 const projects=[
    
   {
@@ -14,7 +19,7 @@ const projects=[
         technologies:"React , Tailwind, API",
         image:Img,
         github:"https://github.com/Deepak4965/Food-Delivery",
-        demo:""
+        demo:"https://image-enhanced-lake.vercel.app/"
     },
     {
         id:2,
@@ -23,27 +28,65 @@ const projects=[
         technologies:"React , Tailwind",
         image:ems,
         github:"https://github.com/Deepak4965/Ems",
-        demo:"deepak-ems.netlify.app"
+        demo:"https://deepak-ems.netlify.app/"
     },
     {
         id:3,
+        name:"Food Delievery",
+        technologies:"React , Tailwind",
+        image:fast,
+        github:"https://github.com/Deepak4965/Food-Delivery",
+        demo:""
+    },
+    {
+        id:4,
+        name:"Online Job Portal",
+        technologies:"React , Tailwind, FireBase",
+        image:job,
+        github:"https://github.com/Deepak4965/Job-Portal/tree/main",
+        demo:""
+    },
+    {
+        id:5,
         name:"Ecommerce",
         technologies:"Redux, React",
         image:em,
         github:"https://github.com/Deepak4965/Ecommerce",
         demo:"https://deepak-coder-e-commerce.netlify.app/"
     },
-    {
-        id:4,
-        name:"Food Delievery",
-        technologies:"React , Tailwind",
-        image:em,
-        github:"",
-        demo:""
-    },
 ]
 
 const Project = () => {
+   useGSAP(()=>{
+        gsap.from("#para",{
+            y:100,
+            duration:1,
+            opacity:0,
+            stagger:1,
+            scrollTrigger:{
+                trigger:"#para",
+                scroll:"body",
+                scrub:2,
+                
+                start:"top 80%",
+                end:"top 30%"
+            }
+        })
+      gsap.from("#pro",{
+            y:100,
+            duration:1,
+            opacity:0,
+            stagger:1,
+            scrollTrigger:{
+                trigger:"#pro",
+                scroll:"body",
+                scrub:2,
+                 
+                start:"top 80%",
+                end:"top 30%"
+            }
+        })
+    })
   return (
     <div className='bg- text-white py-20' id='project'>
         <div className='container mx-auto px-4 sm:px-16 lg:px-24'>
