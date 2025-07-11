@@ -1,11 +1,29 @@
-import React, { useRef } from 'react'
+
+import { useRef } from 'react';
 import './Navbar.css'
 import { Link } from 'react-scroll'
+import {useGSAP} from '@gsap/react'
+import gsap from 'gsap'
 
 const Navbar = () => {
-  let menu=useRef()
-  let mobile=useRef()
-  
+  let menu=useRef();
+  let mobile=useRef();
+  useGSAP(()=>{
+    let t1=gsap.timeline()
+t1.from("nav h1",{
+  y:-100,
+  duration:1,
+  opacity:0
+})
+t1.from("nav ul li",{
+ y:-100,
+  duration:1,
+  opacity:0,
+  stagger:1
+})
+  })
+
+
   return (
     <nav>
       <h1>PORTFOLIO</h1>
@@ -14,7 +32,7 @@ const Navbar = () => {
         <Link to='about' activeClass='active' spy={true} smooth={true} duration={500}> <li>About</li></Link>
         <Link to='Skills' activeClass='active' spy={true} smooth={true} duration={500}> <li>Skill</li></Link>
         <Link to='project' activeClass='active'spy={true} smooth={true} duration={500} ><li>Projects</li></Link>
-        <Link to='contact' activeClass='active' spy={true} smooth={true} duration={500}><li>Contact</li></Link>
+        <Link to='Contact' activeClass='active' spy={true} smooth={true} duration={500}><li>Contact</li></Link>
       </ul>
       <div className="hamburger"ref={menu} onClick={()=>{
         mobile.current.classList.toggle("activemobile")
@@ -29,7 +47,7 @@ const Navbar = () => {
         <Link to='about' activeClass='active' spy={true} smooth={true} duration={500}> <li>About</li></Link>
         <Link to='Skills' activeClass='active' spy={true} smooth={true} duration={500}> <li>Skill</li></Link>
         <Link to='project' activeClass='active'spy={true} smooth={true} duration={500} ><li>Projects</li></Link>
-        <Link to='contact' activeClass='active' spy={true} smooth={true} duration={500}><li>Contact</li></Link>
+        <Link to='Contact' activeClass='active' spy={true} smooth={true} duration={500}><li>Contact</li></Link>
       </ul>
     </nav>
   )
