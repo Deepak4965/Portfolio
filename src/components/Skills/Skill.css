@@ -1,21 +1,28 @@
-.skillpart {
+.slider {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 30px;
+    
 }
-#para{
+#heading{
     font-size: 4vmax;
     background: linear-gradient(to right , rgb(203,53,108), white);
     background-clip: text;
     color: transparent;
     }
-@media (max-width: 750px) {
-    .skillpart {
-        height: auto; /* Allow height to adjust based on content */
-        padding-left: 20px; /* Adjust padding for smaller screens */
-        width: 100%; /* Use full width on smaller screens */
-        flex-wrap: wrap; /* Allow wrapping of items */
+#title{
+    font-size: 2vmax;
+    background: linear-gradient(to right , rgb(203,53,108), white);
+    background-clip: text;
+    color: transparent;
     }
+ 
+#slider{
+     font-size: 4vmax;
+    background: linear-gradient(to right , rgb(203,53,108), white);
+    background-clip: text;
+    color: transparent
 }
+
