@@ -44,15 +44,7 @@
     background-clip: text;
     color: transparent;
 }
-/* .line2{
-    font-size: 2.5em;
-    background: linear-gradient(to right, rgb(15, 15, 251), white);
-    background-clip: text;
-    color: transparent;
-}
-.line3{
-    font-size: 1em;
-} */
+
 .home-details button{
     padding: 10px 30px;
     background-color: rgb(15, 15, 251);
