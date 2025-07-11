@@ -1,9 +1,45 @@
-import React from 'react'
+
 import './Contact.css'
 import con from '../../assets/contact.png'
+import {useGSAP} from '@gsap/react'
+import gsap from 'gsap'
+import {ScrollTrigger} from 'gsap/all'
+gsap.registerPlugin(ScrollTrigger)
 const Contact = () => {
+
+useGSAP(()=>{
+        gsap.from(".leftcontact img",{
+            x:-100,
+            duration:1,
+            opacity:0,
+            stagger:1,
+            scrollTrigger:{
+                trigger:".leftcontact img",
+                scroll:"body",
+                scrub:2,
+             
+                start:"top 80%",
+                end:"top 30%"
+            }
+        })
+        gsap.from("form",{
+            x:-100,
+            duration:1,
+            opacity:0,
+            stagger:1,
+            scrollTrigger:{
+                trigger:"form",
+                scroll:"body",
+                scrub:2,
+                  
+                start:"top 80%",
+                end:"top 30%"
+            }
+        })
+})
+  
   return (
-    <div id='contact' className='text-white'>
+    <div id='Contact' className='text-white'>
       <div className="leftcontact">
 <img src={con} alt="" />
       </div>
