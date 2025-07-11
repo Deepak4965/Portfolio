@@ -1,4 +1,4 @@
-#contact{
+#Contact{
     height: 100%;
     display: flex;
 }
@@ -46,7 +46,7 @@ form input{
 #textarea{
     width: 80%;
     height: 200px;
-    order: 2px solid rgb(105,208,215);
+    border: 2px solid rgb(105,208,215);
     border-radius: 20px;
     padding: 20px;
 
@@ -68,7 +68,7 @@ form input{
     color:  rgb(105,208,215);
 }
 @media (max-width:750px) {
-    #contact{
+    #Contact{
         flex-direction: column;
     }
     .leftcontact{
